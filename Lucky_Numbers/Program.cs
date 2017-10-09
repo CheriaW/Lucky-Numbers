@@ -10,6 +10,7 @@ namespace Lucky_Numbers
     {
         static void Main(string[] args)
 
+        
         {//part 1
 
             Console.WriteLine("If you guess all numbers correctly and win this lottery you will win $100,000.");
@@ -100,14 +101,14 @@ namespace Lucky_Numbers
 
 
                     //PART 4
-
-                    string playAgain = Console.ReadLine().ToUpper();
+                    string playAgain;
                     do
+
                     {
                         Console.WriteLine("Do you want to play the game? (YES/NO)");
                         Console.WriteLine("Great game!");
-                        Console.WriteLine("Do you want to play again?");
-                        playAgain = Console.ReadLine();
+                        //Console.WriteLine("Do you want to play again?");
+                        playAgain = Console.ReadLine().ToUpper();
                     }
                     while (playAgain == "YES");
 
@@ -117,5 +118,7 @@ namespace Lucky_Numbers
 
 
         }
+
+
     }
 }
